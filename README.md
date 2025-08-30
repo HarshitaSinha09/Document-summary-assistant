@@ -1,88 +1,110 @@
-# 📄 Document Summary Assistant
+# 📄 Document Summary Assistant  
 
-**Live Demo:** [document-summarizer-ten.vercel.app](https://document-summarizer-ten.vercel.app)
+**Live Demo:** [document-summarizer-ten.vercel.app](https://document-summarizer-ten.vercel.app)  
 
-A **modern, glass-style web app** that intelligently summarizes PDF and image documents using **AI**, with smooth animations and a fully responsive design.
-
----
-
-## 🔄 Application Workflow
-
-1. **Upload** – Drag and drop or select a PDF/image file  
-2. **Choose Length** – Select your preferred summary length (Short, Medium, Long)  
-3. **Process** – The app extracts text and generates an AI summary  
-4. **Review** – Copy or use the generated bullet-point summary  
+A **next-generation web app** that extracts and summarizes content from **PDFs and images** with the help of **AI**, designed with an elegant **glassmorphic UI** and seamless cross-device compatibility.  
 
 ---
 
-## ✨ Core Features
+## 🚀 Why This Project?  
 
-### 📤 Document Upload
-- **Drag & Drop Upload Zone** with hover animations  
-- Supports **PDF** and image files (**PNG, JPG, JPEG**)  
-- **Validation** for unsupported formats with friendly error messages  
-
-### 📑 Text Extraction
-- **PDF.js** for multi-page PDF parsing  
-- **Tesseract.js OCR** for scanned images  
-- Handles **large, multi-page documents** smoothly  
-
-### 🤖 AI Summarization
-- **Powered by Cohere AI API**  
-- **Three length options:** Short • Medium • Long  
-- **Bullet-point summaries** for clarity  
-- **Copy to clipboard** button with success animation  
-
-### 🎨 User Experience
-- **Glassmorphism UI** with blur, shadows, and smooth animations  
-- **Loading Indicators** with spinners during processing  
-- **Error States** with styled alert messages  
-- **Responsive Design** across desktop, tablet, and mobile  
+Managing long reports, scanned notes, and documents can be overwhelming. This application was built to **reduce reading time** by generating **clear, structured summaries** instantly. The focus was to combine **intelligent text processing** with a **delightful user experience**.  
 
 ---
 
-## 🛠️ Tech Stack
+## 🔄 Workflow Overview  
 
-**Frontend:** HTML5, CSS3, JavaScript (ES6+)  
-
-**Libraries:**  
-- **PDF.js** → PDF parsing  
-- **Tesseract.js** → OCR for images  
-- **Cohere API** → AI-powered summarization  
-
-**Deployment:** Hosted on **Vercel**  
+1. **Upload Document** – Drag & drop or select a PDF/image file  
+2. **Customize Summary** – Choose length preference (Short / Medium / Long)  
+3. **AI Processing** – Text extraction and AI summarization happen in the browser  
+4. **Get Results** – Clean, bullet-point summaries ready to copy or reuse  
 
 ---
 
-## ⚙️ Technical Approach
+## ✨ Highlighted Features  
 
-- **Client-Side Processing:** Text extraction happens entirely in the browser → ensures **privacy** & **performance**  
-- **Single Page App Architecture:** Progressive enhancement with modular panels (Upload → Options → Summary)  
-- **UX Focus:**  
-  - Drag-and-drop with instant visual feedback  
-  - Animated loading states  
-  - Mobile-first responsive layout  
-- **Performance:**  
-  - Progressive feedback during parsing & summarization  
-  - Error boundaries for unsupported/large files  
-- **Security:**  
-  - Demo uses client-side API key (⚠️ not safe for production)  
-  - In production → key should be secured in a backend or serverless proxy  
+### 📤 Smart File Upload  
+- Drag-and-drop zone with **interactive hover effects**  
+- Supports **PDF** and image formats (**PNG, JPG, JPEG**)  
+- Real-time **file validation & error alerts**  
+
+### 📑 Text Processing  
+- **PDF.js** for efficient parsing of multi-page PDFs  
+- **Tesseract.js OCR** for extracting text from images & scanned files  
+- Smooth handling of **large or multi-page documents**  
+
+### 🤖 AI-Powered Summaries  
+- **Cohere Summarization API** for context-aware results  
+- Output in **short, medium, or long formats**  
+- **Bullet-style summaries** for quick readability  
+- One-click **copy to clipboard** with instant feedback  
+
+### 🎨 User-Centric Interface  
+- **Glassmorphism design** with soft shadows & blur effects  
+- Responsive layout optimized for **desktop, tablet, and mobile**  
+- **Loading animations** during processing  
+- Clear **error states & recovery prompts**  
 
 ---
 
-## 🌍 Browser Compatibility
+## 🛠️ Technology Stack  
 
-✅ Chrome (recommended)  
-✅ Firefox  
-✅ Safari  
-✅ Edge  
-📱 Mobile browsers supported  
+- **Frontend:** HTML5, CSS3, Vanilla JavaScript (ES6+)  
+- **Libraries & Tools:**  
+  - 📘 **PDF.js** → Parse and extract text from PDFs  
+  - 🔡 **Tesseract.js** → OCR for scanned files  
+  - 🧠 **Cohere AI API** → Intelligent summarization  
+- **Hosting/Deployment:** Vercel  
 
 ---
 
-## 🚀 How to Run Locally
+## ⚙️ Design & Technical Approach  
 
-1. Clone this repository:  
+- **All Client-Side Processing** → Protects privacy & reduces backend complexity  
+- **Single-Page Architecture** → Modular workflow: Upload → Options → Summary  
+- **Performance Optimizations:**  
+  - Progressive feedback for parsing & AI calls  
+  - Handles large files without freezing the UI  
+- **UX First:**  
+  - Minimal learning curve with guided steps  
+  - Mobile-first layout with adaptive grid design  
+- **Security Note:**  
+  - For demo: API key is in client-side (⚠️ not secure)  
+  - For production: key should be secured via serverless functions  
+
+---
+
+## 🌍 Browser & Device Compatibility  
+
+- ✅ Chrome (best performance)  
+- ✅ Firefox  
+- ✅ Safari  
+- ✅ Microsoft Edge  
+- 📱 Fully functional on mobile browsers  
+
+---
+
+## 📸 Screenshots  
+
+_Add screenshots or GIFs of the app showing file upload, summary generation, and UI design._  
+
+---
+
+## 🧩 Future Enhancements  
+
+- 🔍 Add **search inside document** feature  
+- 🌐 Multi-language OCR & summarization support  
+- 📊 Export summaries as **PDF, DOCX, or TXT**  
+- 🖼️ UI themes (dark/light mode toggle)  
+- 🤝 Collaboration features (share summaries with others)  
+
+---
+
+## 👩‍💻 How to Run Locally  
+
+1. Clone the repository  
    ```bash
    git clone <repo-url>
+2. Open project in VS Code
+3. Install Live Server extension
+4. Right-click index.html → Open with Live Server
