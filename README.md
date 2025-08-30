@@ -1,108 +1,103 @@
 # 📄 Document Summary Assistant  
 
-**Live Demo:** 🌐 [document-summarizer-ten.vercel.app](https://document-summarizer-ten.vercel.app)  
+🔗 **Live Demo:** [document-summarizer-ten.vercel.app](https://document-summarizer-ten.vercel.app)  
 
-A **lightweight yet powerful AI tool** that converts lengthy **PDFs and scanned images** into concise, readable summaries. Built with a **glass-style interface**, the app combines **modern UI design, OCR technology, and AI summarization** for a smooth end-to-end experience.  
-
----
-
-## 🎯 Project Motivation  
-
-We all deal with **long research papers, scanned notes, or reports** that take hours to read. The goal of this project was to build a **privacy-focused client-side application** that automatically:  
-- Extracts text from digital and scanned files  
-- Generates **short, medium, or detailed summaries**  
-- Delivers results instantly in a structured, user-friendly format  
+A **smart document companion** that helps you turn bulky **PDFs and images** into **crisp AI summaries**. Built with a **modern glass-style interface**, it focuses on **speed, simplicity, and accessibility** across devices.  
 
 ---
 
-## 🔎 User Journey  
+## 🌟 Overview  
 
-1. **Upload File** → Drop or select a document (PDF / Image).  
-2. **Set Preferences** → Choose the summary size (Short • Medium • Long).  
-3. **Process with AI** → The app parses text & generates a clean summary.  
-4. **View & Export** → Copy or use the structured summary directly.  
-
----
-
-## ✨ Key Features  
-
-### 📂 Document Upload  
-- Drag-and-drop with **hover effects & animations**  
-- Supports **PDF, PNG, JPG, JPEG** formats  
-- File validation + helpful error messages  
-
-### 📖 Text Extraction  
-- **PDF.js** for structured parsing of multi-page PDFs  
-- **Tesseract.js OCR** for text recognition in scanned images  
-- Handles **large, multi-page files** smoothly  
-
-### 🤖 AI Summarization  
-- **Cohere API** powers intelligent summarization  
-- **Three modes** → Short • Medium • Long  
-- Output in **bullet format** for readability  
-- Instant **copy-to-clipboard** with visual feedback  
-
-### 🎨 Modern UI/UX  
-- **Glassmorphism design** with smooth blur & shadow effects  
-- Responsive layout across **desktop, tablet, mobile**  
-- **Loading spinners & progress states** during processing  
-- Styled error messages for better user guidance  
+Reading through long research papers, scanned notes, or reports is time-consuming. This project was created to provide a **fast, private, and reliable summarization tool** that:  
+- Reads **PDFs and scanned images**  
+- Applies **OCR + AI** to understand content  
+- Delivers **custom-length summaries** in seconds  
 
 ---
 
-## 🛠️ Built With  
+## 🧭 How Users Interact  
 
-- **Frontend:** HTML5, CSS3, Vanilla JavaScript (ES6+)  
-- **Core Libraries:**  
-  - 📘 **PDF.js** → PDF parsing  
-  - 🔡 **Tesseract.js** → Optical Character Recognition  
-  - 🧠 **Cohere API** → AI-powered summaries  
-- **Deployment:** Hosted on **Vercel**  
+1. **Choose File** → Upload a PDF or image (drag & drop supported)  
+2. **Set Summary Length** → Short • Medium • Long  
+3. **Process Instantly** → OCR + AI generate results in browser  
+4. **Use Output** → Copy structured points for quick reference  
 
 ---
 
-## ⚙️ How It Works Internally  
+## 🔑 Main Capabilities  
 
-- All text extraction & summarization runs **directly in the browser** (client-side) → ensuring **speed & privacy**.  
-- Simple **Single Page Application** structure → Workflow: Upload → Options → Summary.  
-- **Performance safeguards**:  
-  - Progressive feedback during parsing & AI requests  
-  - Graceful handling of large or unsupported files  
-- **Security note**:  
-  - Demo uses a client-side API key (⚠️ insecure for production).  
-  - In production, API calls should be proxied through a backend/serverless layer.  
+### 📂 File Handling  
+- Drag-and-drop zone with visual cues  
+- Works with **PDF, PNG, JPG, JPEG**  
+- Immediate validation for unsupported files  
+
+### 🔍 Content Extraction  
+- **PDF.js** → Handles multi-page PDFs  
+- **Tesseract.js** → Recognizes text in images/scanned files  
+- Smooth experience even with **large documents**  
+
+### 🧠 AI Summarizer  
+- Powered by **Cohere API**  
+- Generates summaries in **3 sizes** (short/medium/detailed)  
+- Structured in **bullet form** for clarity  
+- **Copy button** with instant feedback  
+
+### 🎨 Interface Highlights  
+- Glassmorphism design with blur + glow effects  
+- Optimized for **desktop, tablet, mobile**  
+- Loading spinners + progress states during processing  
+- Clear error prompts for invalid actions  
 
 ---
 
-## 🌐 Supported Platforms  
+## 🏗️ Tech Behind the App  
 
-- ✅ Google Chrome (recommended)  
-- ✅ Mozilla Firefox  
+- **Core:** HTML5, CSS3, Vanilla JavaScript (ES6+)  
+- **Libraries & APIs:**  
+  - 📘 PDF.js → PDF parsing  
+  - 🔡 Tesseract.js → OCR for images  
+  - 🧠 Cohere API → AI summarization  
+- **Deployment:** Hosted on Vercel  
+
+---
+
+## 🔬 Architecture & Design Choices  
+
+- Runs **100% client-side** → No server uploads = user privacy  
+- Organized as a **Single Page Application**  
+- **Resilient UI:** Progress indicators + error handling for heavy files  
+- **Performance tweaks:** Incremental parsing & feedback loops  
+- **Security note:** Demo key is public (⚠️ not safe for production). For real deployment, use a **secure serverless proxy**.  
+
+---
+
+## 🌐 Compatibility Matrix  
+
+- ✅ Chrome (best performance)  
+- ✅ Firefox  
 - ✅ Safari  
-- ✅ Microsoft Edge  
-- 📱 Fully responsive for mobile devices  
+- ✅ Edge  
+- 📱 Mobile browsers fully supported  
 
 ---
 
-## 📸 Screenshots  
+## 🖼️ Demo Screens (Optional)  
 
-_Add screenshots or demo GIFs showcasing file upload, OCR, and summary output._  
-
----
-
-## 🚀 Roadmap / Upcoming Features  
-
-- 🔍 In-document search & highlight support  
-- 🌐 OCR & summarization for **multiple languages**  
-- 📊 Export summaries to **PDF, Word, or plain text**  
-- 🖼️ Dark/Light theme toggle  
-- 🤝 Collaboration mode (share summaries with teammates)  
+_Add screenshots or demo GIFs showcasing file upload, OCR, and AI summaries._  
 
 ---
 
-## 🖥️ Local Development  
+## 🛣️ Future Roadmap  
 
-Follow these steps to run the project locally:  
+- Multi-language OCR + AI summaries  
+- Export summaries in **PDF, DOCX, TXT** formats  
+- In-app search + keyword highlighting  
+- Dark / Light themes  
+- Real-time sharing & collaboration  
+
+---
+
+## ⚡ Quickstart for Local Setup  
 
 1. Clone this repo
    ```bash
