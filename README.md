@@ -27,7 +27,7 @@ Managing long reports, scanned notes, and documents can be overwhelming. This ap
 
 ## 🔑 Feature Matrix  
 
-### 📂 Document Ingestion  
+### 📄 Document Ingestion  
 - Drag-and-drop upload with **animated hover cues**  
 - Native support for **PDF, PNG, JPG, JPEG** formats  
 - Real-time **validation & fault tolerance** for unsupported inputs  
@@ -89,16 +89,6 @@ Managing long reports, scanned notes, and documents can be overwhelming. This ap
 ## 🖼️ Demonstration Media  
 
 _Insert screenshots, interface previews, or workflow GIFs to visualize functionality._  
-
----
-
-## 🔗 Intelligent API Integration  
-
-- Utilizes **Cohere Summarization API** for generating clear, structured summaries.  
-- Provides **short, medium, and long** output options.  
-- Handles requests asynchronously for smooth performance.  
-- Includes **basic error handling** to manage failed or slow responses.  
-- Demo uses client-side key; production will require **secure server-side storage**.  
 
 ---
 
