@@ -1,0 +1,293 @@
+/* --- 1. Setup: Variables & General Styles --- */
+:root {
+    --bg-url: url('https://www.gstatic.com/earth/social/00_generic_facebook-001.jpg');
+    --accent-color: #8a2be2;
+    --glass-bg: rgba(25, 26, 46, 0.6);
+    --inner-panel-bg: rgba(0, 0, 0, 0.2);
+    --text-light: #f0f0f0;
+    --border-color: rgba(255, 255, 255, 0.2);
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: linear-gradient(rgba(26, 26, 46, 0.7), rgba(26, 26, 46, 0.7)), var(--bg-url);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: var(--text-light);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* --- 2. Title Reveal Animation --- */
+.title-reveal {
+    position: fixed;
+    inset: 0;
+    background: #1a1a2e;
+    display: grid;
+    place-items: center;
+    z-index: 100;
+    animation: reveal 3s forwards ease-in-out;
+}
+.title-reveal h1 {
+    font-size: 3rem;
+    opacity: 0;
+    animation: fadeInText 1.5s 0.5s forwards;
+}
+
+/* --- 3. Main Layout --- */
+.app-content {
+    width: 100%;
+    max-width: 750px;
+    opacity: 0;
+    animation: fadeInContent 1s 2.5s forwards;
+}
+.app-title {
+    font-size: 2.2rem;
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: 700;
+}
+.panel {
+    background: var(--glass-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    margin-bottom: 25px;
+}
+.results-display { display: none; }
+
+/* --- 4. Component Styling --- */
+.panel-title {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.title-icon {
+    color: var(--accent-color);
+    margin-right: 12px;
+    font-size: 1.2rem;
+}
+
+.drop-zone {
+    border: 2px dashed var(--border-color);
+    border-radius: 16px;
+    padding: 50px 40px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.drop-zone:hover,
+.drop-zone.dragover {
+    border-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.05);
+}
+.upload-svg {
+    color: rgba(255, 255, 255, 0.6);
+    margin-bottom: 15px;
+    transition: all 0.3s ease;
+}
+.drop-zone:hover .upload-svg {
+    color: var(--accent-color);
+    transform: scale(1.1);
+}
+
+/* --- 5. Buttons --- */
+.length-selector,
+.summary-actions {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.length-option,
+.action-button {
+    flex: 1;
+    padding: 12px 20px;
+    border: 1px solid var(--border-color);
+    background: transparent;
+    color: var(--text-light);
+    border-radius: 12px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    text-align: center;
+}
+.length-option:hover,
+.action-button:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.3);
+}
+.length-option.active {
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
+    font-weight: 600;
+}
+.action-button.copied {
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
+    color: white;
+}
+.summarize-button {
+    width: 100%;
+    padding: 16px;
+    margin-top: 30px;
+    background-color: var(--accent-color);
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+.summarize-button:disabled {
+    background-color: #555;
+    cursor: not-allowed;
+}
+
+/* --- 6. States & Summary --- */
+.document-details {
+    background: rgba(0,0,0,0.2);
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 12px;
+    text-align: center;
+    display: none;
+}
+.processing-indicator {
+    text-align: center;
+    display: none;
+    padding: 40px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.spinner {
+    border: 3px solid var(--border-color);
+    border-top: 3px solid var(--accent-color);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+    margin: 0 auto 15px;
+}
+.summary-container { display: none; }
+
+.length-badge {
+    background-color: var(--accent-color);
+    color: white;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    text-transform: capitalize;
+}
+.control-panel {
+    background: var(--inner-panel-bg);
+    border-radius: 12px;
+    padding: 20px;
+}
+.option-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.initial-options {
+    margin-top: 30px;
+}
+
+.length-heading {
+    font-size: 1.2rem;
+    font-weight: 500;
+    opacity: 0.8;
+    margin-bottom: 15px;
+}
+.summary-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 25px 0 15px;
+}
+.summary-heading {
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+.summary-text {
+    margin: 0 0 25px 0;
+}
+.summary-text ul {
+    list-style: none;
+    padding: 0;
+}
+.summary-text li {
+    padding: 12px 0;
+    border-bottom: 1px solid var(--border-color);
+    line-height: 1.6;
+}
+.summary-text li:last-child {
+    border-bottom: none;
+}
+.summary-actions { margin-top: 0; }
+.status-message {
+    background-color: #ff3b3020;
+    color: #ff3b30;
+    border: 1px solid #ff3b30;
+    padding: 15px;
+    border-radius: 12px;
+    margin-top: 15px;
+    text-align: center;
+    display: none;
+}
+
+/* --- 7. Keyframe Animations --- */
+@keyframes reveal {
+    0%, 80% { transform: translateY(0); }
+    100% { transform: translateY(-100%); }
+}
+@keyframes fadeInText { to { opacity: 1; } }
+@keyframes fadeInContent { to { opacity: 1; } }
+@keyframes spin { to { transform: rotate(360deg); } }
+
+/* --- 8. Mobile Responsiveness --- */
+@media (max-width: 768px) {
+    .app-title { font-size: 1.8rem; }
+    .panel { padding: 20px; }
+    .panel-title {
+        font-size: 1.3rem;
+        text-align: left;
+        justify-content: flex-start;
+    }
+    .length-selector,
+    .summary-actions {
+        flex-direction: column;
+        gap: 8px;
+    }
+    .length-option,
+    .action-button {
+        padding: 10px 15px;
+        font-size: 0.9rem;
+    }
+    .drop-zone { padding: 40px 20px; }
+    .summarize-button {
+        padding: 12px;
+        font-size: 1rem;
+    }
+    .document-details { padding: 10px; }
+    .summary-heading { font-size: 1.2rem; }
+    .summary-text li {
+        padding: 10px 0;
+        font-size: 0.9rem;
+    }
+}
