@@ -1,6 +1,6 @@
 # 📄 Document Summary Assistant  
 
-🔗 **Live Demo:** [document-summarizer-ten.vercel.app](https://document-summarizer-ten.vercel.app)  
+🔗 **Live Demo:** [document-summarizer.vercel.app](https://document-summarizer-ten.vercel.app)  
 
 A **next-generation AI-powered utility** that transforms lengthy **PDFs and image-based documents** into concise, structured summaries. The application integrates **OCR, AI-driven summarization and a glassmorphic UI** to deliver a seamless document analysis experience across platforms.  
 
@@ -123,7 +123,8 @@ _Insert screenshots, interface previews, or workflow GIFs to visualize functiona
 
 1. Clone this repo
    ```bash
-   git clone <repo-url>
+   git clone https://github.com/your-username/document-summary-assistant.git
+   cd document-summary-assistant
 2. Open project in VS Code
 3. Install Live Server extension
 4. Right-click index.html → Open with Live Server
