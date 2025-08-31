@@ -115,8 +115,8 @@ Managing long reports, scanned notes, and documents can be overwhelming. This ap
 
 1. Clone this repo
    ```bash
-   git clone https://github.com/your-username/Document-summary-assistant.git 
-   cd document-summary-assistant
+   git clone https://github.com/HarshitaSinha09/Document-summary-assistant.git
+   cd Document-summary-assistant
 2. Open project in VS Code
 3. Install Live Server extension
 4. Right-click index.html → Open with Live Server
