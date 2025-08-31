@@ -2,11 +2,11 @@
 
 🔗 **Live Demo:** [document-summarizer-ten.vercel.app](https://document-summarizer-ten.vercel.app)  
 
-A **next-generation AI-powered utility** that transforms lengthy **PDFs and image-based documents** into concise, structured summaries. The application integrates **OCR, NLP-driven summarization, and a glassmorphic UI** to deliver a seamless document analysis experience across platforms.  
+A **next-generation AI-powered utility** that transforms lengthy **PDFs and image-based documents** into concise, structured summaries. The application integrates **OCR, AI-driven summarization and a glassmorphic UI** to deliver a seamless document analysis experience across platforms.  
 
 ---
 
-## 🌟 Vision & Purpose  
+## ✨ Vision and Purpose  
 
 Managing long reports, scanned notes, and documents can be overwhelming. This application was built to **reduce reading time** by generating **clear, structured summaries** instantly. The focus was to combine **intelligent text processing** with a **delightful user experience**.   This project was conceived as an **intelligent assistant** that automates:  
 
@@ -19,7 +19,7 @@ Managing long reports, scanned notes, and documents can be overwhelming. This ap
 ## 🧭 End-to-End User Flow  
 
 1. **Ingestion Layer** → Upload or drag & drop a PDF/image file  
-2. **Configuration Panel** → Select summary length (Concise • Standard • Comprehensive)  
+2. **Configuration Panel** → Select summary length (Short • Medium • Long)  
 3. **Processing Pipeline** → OCR + NLP-driven summarization in real time  
 4. **Output Layer** → Receive well-structured summaries, ready for reuse  
 
@@ -39,9 +39,9 @@ Managing long reports, scanned notes, and documents can be overwhelming. This ap
 
 ### 🧠 Cognitive Summarization Layer  
 - Powered by **Cohere Summarization API**  
-- Multi-granularity outputs: **Concise • Moderate • Extended**  
+- Multi-granularity outputs: **Short • Medium • Long**  
 - Structured into **bullet-point knowledge nodes**  
-- Integrated **clipboard export** with success feedback loop  
+- One-click copy to clipboard with instant feedback 
 
 ### 🎨 Experience & Interaction Design  
 - **Glassmorphism aesthetics** with blur depth, gradients, and shadows  
@@ -51,46 +51,54 @@ Managing long reports, scanned notes, and documents can be overwhelming. This ap
 
 ---
 
-## 🏗️ Technical Stack  
+## 🛠️ Tech Stack  
 
-- **Core Technologies:** HTML5, CSS3, JavaScript (ES6+)  
-- **Libraries & Frameworks:**  
-  - 📘 **PDF.js** → High-fidelity PDF parsing  
-  - 🔡 **Tesseract.js** → Image-to-text OCR layer  
-  - 🧠 **Cohere API** → Semantic summarization engine  
-- **Deployment Infrastructure:** Vercel  
+- **Frontend:** HTML5, CSS3, Vanilla JavaScript (ES6+)  
+- **Core Libraries:**  
+  - 📘 **PDF.js** → PDF parsing  
+  - 🔡 **Tesseract.js** → Optical Character Recognition  
+  - 🧠 **Cohere API** → AI-powered summaries  
+- **Deployment:** Hosted on **Vercel**  
 
 ---
 
-## ⚙️ System Architecture & Design Rationale  
+## 🚀 Execution Framework  
 
-- **Client-Centric Processing** → All computation executed in-browser, ensuring **data privacy and zero server dependency**  
-- **SPA Workflow Orchestration** → Unified pipeline: Input → Processing → Output  
-- **Resilience Engineering:**  
-  - Progressive rendering during parsing & summarization  
-  - Error boundaries for oversized or malformed inputs  
-- **UX Engineering:**  
-  - Adaptive grid system for mobile-first responsiveness  
-  - Cognitive load reduction through staged interactions  
-- **Security Considerations:**  
-  - Demo utilizes client-exposed API key (⚠️ insecure in production)  
-  - Production-ready model requires **serverless proxy integration**  
+- **Problem-Solving Strategy** → Designed as a fully client-side solution to **reduce backend dependencies** while maintaining high functionality. Leveraged trusted libraries like **PDF.js** and **Tesseract.js** for robust text extraction, integrated with **Cohere AI services** to deliver adaptive summarization.  
+
+- **System Architecture** → Structured as a **single-page application** with progressive enhancement. Begins with simple file ingestion, evolves through text/OCR processing, and concludes in AI-driven summarization. The **two-phase workflow** ensures clarity while keeping interactions lightweight.  
+
+- **User Experience Engineering** → Implemented **dynamic feedback loops** with real-time loading indicators, error alerts, and responsive layouts. The drag-and-drop interface delivers **instant visual confirmation**, while a clean **typographic hierarchy** ensures scannability across devices.  
+
+- **Strategic Technical Choices** → Opted for **vanilla JavaScript** to maintain a lean bundle size and simplify deployment. **PDF.js** enables complex multi-page parsing, **Tesseract.js** powers image OCR, and **Cohere API** introduces customizable, context-aware summarization.  
+
+- **Performance Optimization** → Built with **progressive loading states** and **error boundaries** to gracefully handle large or corrupted files. Entirely **client-side processing** guarantees user privacy while simultaneously minimizing infrastructure costs.  
 
 ---
 
 ## 🌐 Cross-Platform Compatibility  
 
-- ✅ Chrome (optimal)  
+- ✅ Chrome (recommended)  
 - ✅ Firefox  
 - ✅ Safari  
 - ✅ Edge  
-- 📱 Full compatibility with modern mobile browsers  
+- 📱 Mobile browsers  
 
 ---
 
 ## 🖼️ Demonstration Media  
 
 _Insert screenshots, interface previews, or workflow GIFs to visualize functionality._  
+
+---
+
+## 🔗 Intelligent API Integration  
+
+- Utilizes **Cohere Summarization API** for generating clear, structured summaries.  
+- Provides **short, medium, and long** output options.  
+- Handles requests asynchronously for smooth performance.  
+- Includes **basic error handling** to manage failed or slow responses.  
+- Demo uses client-side key; production will require **secure server-side storage**.  
 
 ---
 
