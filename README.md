@@ -90,7 +90,10 @@ Managing long reports, scanned notes, and documents can be overwhelming. This ap
 
 | Upload Document | Select Length | Generated Summary |  
 | :-------------: | :------------: | :---------------: |  
-| ![Upload Screenshot]() | ![Options Screenshot]() | ![Summary Screenshot]() |
+| ![Upload Screenshot](<img width="1919" height="1009" alt="Screenshot 2025-08-31 113242" src="https://github.com/user-attachments/assets/25b41f45-a3fa-4804-b851-00251664d96a" />
+) | ![Length Screenshot](<img width="1919" height="1014" alt="Screenshot 2025-08-31 113300" src="https://github.com/user-attachments/assets/32829798-a455-40f9-86fc-5d4aeb0c0ff8" />
+) | ![Summary Screenshot](<img width="1914" height="1012" alt="Screenshot 2025-08-31 113327" src="https://github.com/user-attachments/assets/7f9c0973-b1cb-40d9-9dc6-4fb1847aa840" />
+) |
 
 ---
 
