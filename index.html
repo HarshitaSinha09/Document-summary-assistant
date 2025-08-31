@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Summary Assistant</title>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+    <script src='https://cdn.jsdelivr.net/npm/tesseract.js@5/dist/tesseract.min.js'></script>
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="title-reveal">
+        <h1>📝 Document Summary Assistant</h1> </div>
+
+    <div class="app-content">
+        <h1 class="app-title">📄 Document Summary Assistant</h1>
+
+        <div class="content-wrapper">
+            <div class="panel file-upload-box">
+                <h2 class="panel-title"><span class="title-icon">◆</span> Upload Your Document</h2>
+                
+                <div class="drop-zone" id="dropZone">
+                    <div class="upload-svg">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                            <polyline points="14 2 14 8 20 8"></polyline>
+                            <line x1="12" y1="18" x2="12" y2="12"></line>
+                            <line x1="9" y1="15" x2="12" y2="12"></line>
+                            <line x1="15" y1="15" x2="12" y2="12"></line>
+                        </svg>
+                    </div>
+                    <div class="drop-instruction">Drop your PDF or Image file here</div>
+                    <input type="file" id="fileSelector" accept=".pdf,.png,.jpg,.jpeg" style="display: none;">
+                </div>
+
+                <div class="document-details" id="documentDetails">
+                    <div class="document-name" id="documentName"></div>
+                    <div class="document-size" id="documentSize"></div>
+                </div>
+
+                <div class="control-panel option-group initial-options">
+                    <h3 class="length-heading">Choose Initial Length</h3>
+                    <div class="length-selector" id="initialLengthSelector">
+                        <button class="length-option" data-length="short">Short</button>
+                        <button class="length-option" data-length="medium">Medium</button>
+                        <button class="length-option" data-length="long">Long</button>
+                    </div>
+                </div>
+
+                <button class="summarize-button" id="summarizeButton" disabled>Generate Summary</button>
+                <div class="status-message" id="statusMessage"></div>
+            </div>
+
+            <div class="panel results-display">
+                <div class="processing-indicator" id="processingIndicator">
+                    <div class="spinner"></div>
+                    <p id="statusText">Generating your summary...</p>
+                </div>
+                <div class="summary-container" id="summaryContainer">
+
+                    <div class="control-panel option-group">
+                        <h3 class="length-heading">Summary Length</h3>
+                        <div class="length-selector" id="regenerateLengthSelector">
+                            <button class="length-option" data-length="short">Short</button>
+                            <button class="length-option" data-length="medium">Medium</button>
+                            <button class="length-option" data-length="long">Long</button>
+                        </div>
+                    </div>
+                    
+                    <div class="summary-header">
+                        <h3 class="summary-heading">📄 Generated Summary</h3>
+                        <div class="length-badge" id="lengthBadge"></div>
+                    </div>
+
+                    <div class="control-panel summary-text-display">
+                        <div class="summary-text" id="summaryText"></div>
+                        <div class="summary-actions">
+                            <button class="action-button" id="copyButton">📋 Copy Summary</button>
+                            <button class="action-button" id="newDocumentButton">📄 New Document</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js" defer></script>
+</body>
+</html>
