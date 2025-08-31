@@ -68,7 +68,7 @@ Managing long reports, scanned notes, and documents can be overwhelming. This ap
 
 - **System Architecture** → Structured as a **single-page application** with progressive enhancement. Begins with simple file ingestion, evolves through text/OCR processing, and concludes in AI-driven summarization. The **two-phase workflow** ensures clarity while keeping interactions lightweight.  
 
-- **User Experience Engineering** → Implemented **dynamic feedback loops** with real-time loading indicators, error alerts, and responsive layouts. The drag-and-drop interface delivers **instant visual confirmation**, while a clean **typographic hierarchy** ensures scannability across devices.  
+- **User Experience Engineering** → Integrated **dynamic feedback loops** including loading indicators, error notifications, and responsive layouts. The drag-and-drop interface gives **instant visual feedback**, while **typography and spacing** make the interface easily scannable. 
 
 - **Strategic Technical Choices** → Opted for **vanilla JavaScript** to maintain a lean bundle size and simplify deployment. **PDF.js** enables complex multi-page parsing, **Tesseract.js** powers image OCR, and **Cohere API** introduces customizable, context-aware summarization.  
 
