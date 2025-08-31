@@ -1,6 +1,6 @@
 # 📄 Document Summary Assistant  
 
-🔗 **Live Demo:** [document-summarizer.vercel.app](https://document-summarizer-ten.vercel.app)  
+🔗 **Live Demo:** [document-summarizer.vercel.app](https://document-summary-assistant-dun.vercel.app/)  
 
 A **next-generation AI-powered utility** that transforms lengthy **PDFs and image-based documents** into concise, structured summaries. The application integrates **OCR, AI-driven summarization and a glassmorphic UI** to deliver a seamless document analysis experience across platforms.  
 
