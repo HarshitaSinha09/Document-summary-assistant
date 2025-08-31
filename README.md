@@ -123,7 +123,7 @@ _Insert screenshots, interface previews, or workflow GIFs to visualize functiona
 
 1. Clone this repo
    ```bash
-   git clone https://github.com/your-username/document-summary-assistant.git
+   git clone https://github.com/your-username/Document-summary-assistant.git 
    cd document-summary-assistant
 2. Open project in VS Code
 3. Install Live Server extension
