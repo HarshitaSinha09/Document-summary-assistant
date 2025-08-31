@@ -103,6 +103,13 @@ _Insert screenshots, interface previews, or workflow GIFs to visualize functiona
 
 ---
 
+## 🔒 Security  
+
+> For demo purposes, the Cohere API key is included in client code.  
+> In production, API keys should be secured on a backend or serverless proxy.
+
+---
+
 ## ⚡ Developer Setup Guide  
 
 1. Clone this repo
