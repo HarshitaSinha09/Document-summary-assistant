@@ -8,7 +8,8 @@ A **next-generation AI-powered utility** that transforms lengthy **PDFs and imag
 
 ## 🌟 Vision & Purpose  
 
-Information overload from **research papers, scanned documents, and reports** often creates inefficiency. This project was conceived as an **intelligent assistant** that automates:  
+Managing long reports, scanned notes, and documents can be overwhelming. This application was built to **reduce reading time** by generating **clear, structured summaries** instantly. The focus was to combine **intelligent text processing** with a **delightful user experience**.   This project was conceived as an **intelligent assistant** that automates:  
+
 - Text extraction from complex file types  
 - Semantic compression of content using AI  
 - Instant generation of structured, length-customizable summaries  
