@@ -88,7 +88,9 @@ Managing long reports, scanned notes, and documents can be overwhelming. This ap
 
 ## 🖼️ Demonstration Media  
 
-_Insert screenshots, interface previews, or workflow GIFs to visualize functionality._  
+| Upload Document | Select Length | Generated Summary |  
+| :-------------: | :------------: | :---------------: |  
+| ![Upload Screenshot]() | ![Options Screenshot]() | ![Summary Screenshot]() |
 
 ---
 
